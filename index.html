@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top px-3">
+        <!-- <div class="container"> -->
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+                <a class="nav-link text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-primary" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Pricing</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Contact Us</a>
+              </li>
+          </ul>
+          <div class="ms-auto px-4">
+          <form class="form-inline float-end input-group ">
+            <input class="form-control mr-sm-2 border border-secondary" type="search" placeholder="Search" aria-label="Search">
+            <span class="input-group-btn" style="width:10px;"></span>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          </div>
+        </div>
+        <!-- </div> -->
+      </nav>
+
+      <!-- carousel -->
+      <div class="">
+      <div id="carouselExampleIndicators" class="carousel slide mb-4 px-0" data-ride="carousel" >
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://wowslider.com/posts/data/upload/2017/04/onlyslides1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>creating slides using carousel in bootstrap</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy9xLIK6H8mAoqVhQUgn0Iq8HSNXD1GvNqQ&amp;usqp=CAU"  alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>creating slides using carousel in bootstrap</p>
+              </div>
+        </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAACnCAMAAACYVkHVAAAAZlBMVEVVVVUzMzNYWFcwMDBVVldTVFY/PThOS0YvLy9YVVIxNzs3PD5DQ0M3NzcxMTBNUVM7QEVSTUg5NjFFSk8yMzU2NDI/Pj4tMTVIRD5FR0hJSEZRUE1CREU8ODc3MjE5O0E3PEI5Mi1ulX8CAAADDklEQVR4nO3Y3XKqMBSGYfKjBg2hrUJbodp9/ze5VxJQUPfsnnQ6Zd7noCosqXyTLAJFAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAV2l9fW/19NO05uHmYbud7f1H6UIcvX8f39vO+351X7ORmgchpPKiKL339az2W37oT/morp702rinSxTPzhzu47JvzmwfxbVx4XVVlI1x+0lt2Nlv+uU/4mTUyJz1Wpn/x2XU47iMuo/LqGXFlUaXZDWMrmlcg9SMrud8G5eVXaln5bgmdKHfzDi6lhNaPFGV+k2O69i2seHEZuRXqZ/VpW97ySTuuYmr823b+vf6Mrpy77Jj7RDXUcr6+vH//2VmcYXd2hkTzjZOxhAn44txfWNiv5I9wR1mcW2CMU583k7GtRzE7eLx5EidfF+OelhE25/FpYKpGulj+xiXSnHFtqaarX5zylRtI8WXuPQfZXbet80kLhX2cRbGWvmexGW7Jla1IR3115vHddjreMrSwq5xxdOstWw9a12GSVylU69pedbN45K/5slqyUni0qnh69jItgtoYfPJKNMwvkzjCqn9dy4GUdi1mY0uVUnrWulZXPrZKFcPk9tqCXwnHbA16rCA9nXb6u/iynNIPob65sooX836eVybkK6S+cpYSlwhNjjpZkuMq3gUl5WP5jauePls4zrE1fO48kDKoytOZ2lwyYO7hN/ma3EV+hR3amlh04WEbLCyJ0d07V2neITUBGUyrk1selKnFzC4vhpXEa92O/8xuzKeWllybW5HlxxIattYG0eXdDLT193RN58LuOOWuz1jhrjyPaMMh0893gS9jHc15YuctjvIzkmrd7FzqbBNR7msu6y85FoT113HkDucW0JcxUYW5nmaDE8k0ovtZLkucflxpy18VbWrjff9Ja5jK7dQVdXb6xOJXF5Kbb8an0h0scFVu4Ws669PpYZ3+cnVXV2+PZw9E5sd5X7sTDYtoMsDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd/4CZhkpo+f80+kAAAAASUVORK5CYII="  alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>creating slides using carousel in bootstrap</p>
+              </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+      </div>
+      <!-- Text -->
+      <div class="container mb-4">
+        <h5>Text Title</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quae aspernatur beatae expedita dicta qui sequi. Quod officiis cupiditate aspernatur placeat possimus! Et, sint exercitationem! Cupiditate expedita minus veniam obcaecati ut maxime magni nesciunt. Suscipit nobis enim ullam odio officia? Ut distinctio sapiente reiciendis suscipit? Reiciendis sint tenetur, ipsum illum unde delectus exercitationem laboriosam saepe minus doloribus sit voluptas facilis sunt! Nam qui perferendis quasi magnam, recusandae libero veniam voluptatum molestiae modi dolores cumque maiores accusamus odit ratione maxime error quo adipisci ut alias reprehenderit, provident esse quas! Iste harum, dignissimos veritatis ea officiis minus tempora dolorum quas asperiores libero.</p>
+      </div>
+
+      <!-- Accordion -->
+      <div class="container mb-4 py-3">
+      <div class="accordion " id="accordionExample">
+        <div class="accordion-item  " >
+          <h2 class="accordion-header">
+            <button class="accordion-button border-bottom border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item 
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-">
+            <button class="accordion-button collapsed border-bottom border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed border-bottom border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item 
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- cards -->
+      <div class=" container mb-4 py-3">
+        <div class="row">
+            <div class="col-3">
+            <div class="card">
+                    <div class="card-header"> Card Header </div>
+                    <img class="card-img-top" style="width:260px" alt="Image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAwAMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIDBAUGB//EACUQAQACAgICAwABBQAAAAAAAAABAgMEBREGQRIhMRMiMlFhof/EABoBAQADAQEBAAAAAAAAAAAAAAABAgQDBQb/xAAjEQEAAwEAAwACAQUAAAAAAAAAAQIDEQQSIRMxQQUUIjJR/9oADAMBAAIRAxEAPwD4mhYAAAABRIIBKCAAAAAAAAAAAAAAAAAAAFARK0QvSOreqdJ6iayHUcEoBAAJAQQAAAAAAAAAAAAAoKiVqsoUaKwy+J119GNqnXO2bHpbrl6B1Hoh09F6Qn1EwpNUWVBCAAAAAAAAAAAAAsEjKs/aktGct1fxWWqJWY7R1POpXDNp+oJtwjKZba6lp9KfkdI8eUtq2j0n8kE+Pxqtimq0WcrZca7VXhwtRgtEuFoEuaAAAAAAAAAAAAAsCSFZXr8bIlVorMuRr45yWiOnO9uNeVZs7zT475ViemHTbj1M8I45c6VaR9w4xtMu/wCOIab61ZdI0lSc4lwdnV6j6h3poz6YuqzYprM/TVW3Xm658aLR06dZL0YLQzzAlVAAAAAAAAAAAUBErRHWUV7V671o2Y8czMQrMtFM5mXf8NoWyXjqHn+RtEQ9bx8fV7LBxs4tf5TX08a2/tbj0Kxx5vl9v+LJNI/XpePn7R1k329Z5Dhau3bJkis+3e+fIc895meO1vpzkxd/FkjXk8a5jsOj3tSazPcN2WnWPbL46nLT4y11l5mlOOPLrDFeElZxQQAAAAAAAAAAoCJXr+22iktVHP0scWtDhpPIb8K9l9B8S0KZb07h8/5us949b/WvX0Df4eteO+VY9PP9ZiIsy5eV7aesvjHkmpkxb1+6z12+i8PSJzhx8qsxdjwHGZtrar1Weu/8J8retKJ8bObW6+k4+C/j0u7U9Pn7bWm3Xo/kr31eI8h1YxXtEQ9fxNJtDnpDx211F3sUePv8lw5l3h515SVnFBAAAAAAAAAAACiWVZ6lSYd87Ox0csVtHbhpHYenhb6974vyVcF6/bwPMxmfr2KzF68fT9PlcW5pxitMfjzfaYr6y82/jznf2h0m94rj5DN8orE9/wCl8tdK/KtE705/m7jhfD8WjWL2pERHvpp/t9dI99P0y6+fWI9c18g2cGtgmlJj6hk05NuQt4tbWnsvkHkmzGTLfp7Ph5zEQ3aWeL2p7vL2qfp4vkT9cV1h59xZzQQAAAAAAAAAAAsCREr1lvxXmsudobMr8dro79sUx1LJrjFnp478eu4bn7Y5r3f/AK8jyPD/AJhtretoe94byilaxNrQ870vnb44a+LF/wBOZyfmVf4ZiL+nS2m23yZcM/6fFZ7L57z3kltibRF2vx/D/mWvtaRyHjN7bnLae5exln6wza6/8dVl+5a6vP0+tFo6leGLSrGV3FBAAAAAAAAAAACwAhaGUSrLtSWyt5j2rMNFb8crX27Y5/XK+fWvPyOO11uXvSv90sl/GiWyvkxxdnmL3rP9clPGiC/kxx1Wbbtef1qrnEMd9+tE5O3TjlN+sbWTDnMtV14Z9JYSuzSggAAAAAAAAAAABRMKrML1le0OsWXtC3ssXmDi0aTBN5OE6Sx+RxT8i/I4fkSbJ4ib9SZTEOVrJKyiCAAAAAAAAAAAAFEgdVXi0SsIXiQOsVohSZBXoHQSJQCEAAAAAAAAAAAAABQBIcTEhw6CEEAKCAAAAAAAAAAAAAAAAAAoAIAAACggAAAAAAP/2Q==" data-atf="5" data-frt="0">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-title">Sub Title</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item">1st list item</li>
+                    <li class="list-group-item">2nd list item</li>
+                    </ul>
+                    <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                    <div class="card-footer">Card Footer</div>
+            </div>  
+            </div>
+            <div class="col-3">
+                <div class="card" >
+                        <div class="card-header"> card Header </div>
+                        <img class="card-img-top" style="width:260px" alt="Image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAwAMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIDBAUGB//EACUQAQACAgICAwABBQAAAAAAAAABAgMEBREGQRIhMRMiMlFhof/EABoBAQADAQEBAAAAAAAAAAAAAAABAgQDBQb/xAAjEQEAAwEAAwACAQUAAAAAAAAAAQIDEQQSIRMxQQUUIjJR/9oADAMBAAIRAxEAPwD4mhYAAAABRIIBKCAAAAAAAAAAAAAAAAAAAFARK0QvSOreqdJ6iayHUcEoBAAJAQQAAAAAAAAAAAAAoKiVqsoUaKwy+J119GNqnXO2bHpbrl6B1Hoh09F6Qn1EwpNUWVBCAAAAAAAAAAAAAsEjKs/aktGct1fxWWqJWY7R1POpXDNp+oJtwjKZba6lp9KfkdI8eUtq2j0n8kE+Pxqtimq0WcrZca7VXhwtRgtEuFoEuaAAAAAAAAAAAAAsCSFZXr8bIlVorMuRr45yWiOnO9uNeVZs7zT475ViemHTbj1M8I45c6VaR9w4xtMu/wCOIab61ZdI0lSc4lwdnV6j6h3poz6YuqzYprM/TVW3Xm658aLR06dZL0YLQzzAlVAAAAAAAAAAAUBErRHWUV7V671o2Y8czMQrMtFM5mXf8NoWyXjqHn+RtEQ9bx8fV7LBxs4tf5TX08a2/tbj0Kxx5vl9v+LJNI/XpePn7R1k329Z5Dhau3bJkis+3e+fIc895meO1vpzkxd/FkjXk8a5jsOj3tSazPcN2WnWPbL46nLT4y11l5mlOOPLrDFeElZxQQAAAAAAAAAAoCJXr+22iktVHP0scWtDhpPIb8K9l9B8S0KZb07h8/5us949b/WvX0Df4eteO+VY9PP9ZiIsy5eV7aesvjHkmpkxb1+6z12+i8PSJzhx8qsxdjwHGZtrar1Weu/8J8retKJ8bObW6+k4+C/j0u7U9Pn7bWm3Xo/kr31eI8h1YxXtEQ9fxNJtDnpDx211F3sUePv8lw5l3h515SVnFBAAAAAAAAAAACiWVZ6lSYd87Ox0csVtHbhpHYenhb6974vyVcF6/bwPMxmfr2KzF68fT9PlcW5pxitMfjzfaYr6y82/jznf2h0m94rj5DN8orE9/wCl8tdK/KtE705/m7jhfD8WjWL2pERHvpp/t9dI99P0y6+fWI9c18g2cGtgmlJj6hk05NuQt4tbWnsvkHkmzGTLfp7Ph5zEQ3aWeL2p7vL2qfp4vkT9cV1h59xZzQQAAAAAAAAAAAsCREr1lvxXmsudobMr8dro79sUx1LJrjFnp478eu4bn7Y5r3f/AK8jyPD/AJhtretoe94byilaxNrQ870vnb44a+LF/wBOZyfmVf4ZiL+nS2m23yZcM/6fFZ7L57z3kltibRF2vx/D/mWvtaRyHjN7bnLae5exln6wza6/8dVl+5a6vP0+tFo6leGLSrGV3FBAAAAAAAAAAACwAhaGUSrLtSWyt5j2rMNFb8crX27Y5/XK+fWvPyOO11uXvSv90sl/GiWyvkxxdnmL3rP9clPGiC/kxx1Wbbtef1qrnEMd9+tE5O3TjlN+sbWTDnMtV14Z9JYSuzSggAAAAAAAAAAABRMKrML1le0OsWXtC3ssXmDi0aTBN5OE6Sx+RxT8i/I4fkSbJ4ib9SZTEOVrJKyiCAAAAAAAAAAAAFEgdVXi0SsIXiQOsVohSZBXoHQSJQCEAAAAAAAAAAAAABQBIcTEhw6CEEAKCAAAAAAAAAAAAAAAAAAoAIAAACggAAAAAAP/2Q==" data-atf="5" data-frt="0">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-title">Sub Title</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1st list item</li>
+                        <li class="list-group-item">2nd list item</li>
+                        </ul>
+                        <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer">Card Footer</div>
+                </div>  
+                </div>
+                <div class="col-3">
+                    <div class="card" >
+                            <div class="card-header"> card Header </div>
+                            <img class="card-img-top" style="width:260px" alt="Image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAwAMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIDBAUGB//EACUQAQACAgICAwABBQAAAAAAAAABAgMEBREGQRIhMRMiMlFhof/EABoBAQADAQEBAAAAAAAAAAAAAAABAgQDBQb/xAAjEQEAAwEAAwACAQUAAAAAAAAAAQIDEQQSIRMxQQUUIjJR/9oADAMBAAIRAxEAPwD4mhYAAAABRIIBKCAAAAAAAAAAAAAAAAAAAFARK0QvSOreqdJ6iayHUcEoBAAJAQQAAAAAAAAAAAAAoKiVqsoUaKwy+J119GNqnXO2bHpbrl6B1Hoh09F6Qn1EwpNUWVBCAAAAAAAAAAAAAsEjKs/aktGct1fxWWqJWY7R1POpXDNp+oJtwjKZba6lp9KfkdI8eUtq2j0n8kE+Pxqtimq0WcrZca7VXhwtRgtEuFoEuaAAAAAAAAAAAAAsCSFZXr8bIlVorMuRr45yWiOnO9uNeVZs7zT475ViemHTbj1M8I45c6VaR9w4xtMu/wCOIab61ZdI0lSc4lwdnV6j6h3poz6YuqzYprM/TVW3Xm658aLR06dZL0YLQzzAlVAAAAAAAAAAAUBErRHWUV7V671o2Y8czMQrMtFM5mXf8NoWyXjqHn+RtEQ9bx8fV7LBxs4tf5TX08a2/tbj0Kxx5vl9v+LJNI/XpePn7R1k329Z5Dhau3bJkis+3e+fIc895meO1vpzkxd/FkjXk8a5jsOj3tSazPcN2WnWPbL46nLT4y11l5mlOOPLrDFeElZxQQAAAAAAAAAAoCJXr+22iktVHP0scWtDhpPIb8K9l9B8S0KZb07h8/5us949b/WvX0Df4eteO+VY9PP9ZiIsy5eV7aesvjHkmpkxb1+6z12+i8PSJzhx8qsxdjwHGZtrar1Weu/8J8retKJ8bObW6+k4+C/j0u7U9Pn7bWm3Xo/kr31eI8h1YxXtEQ9fxNJtDnpDx211F3sUePv8lw5l3h515SVnFBAAAAAAAAAAACiWVZ6lSYd87Ox0csVtHbhpHYenhb6974vyVcF6/bwPMxmfr2KzF68fT9PlcW5pxitMfjzfaYr6y82/jznf2h0m94rj5DN8orE9/wCl8tdK/KtE705/m7jhfD8WjWL2pERHvpp/t9dI99P0y6+fWI9c18g2cGtgmlJj6hk05NuQt4tbWnsvkHkmzGTLfp7Ph5zEQ3aWeL2p7vL2qfp4vkT9cV1h59xZzQQAAAAAAAAAAAsCREr1lvxXmsudobMr8dro79sUx1LJrjFnp478eu4bn7Y5r3f/AK8jyPD/AJhtretoe94byilaxNrQ870vnb44a+LF/wBOZyfmVf4ZiL+nS2m23yZcM/6fFZ7L57z3kltibRF2vx/D/mWvtaRyHjN7bnLae5exln6wza6/8dVl+5a6vP0+tFo6leGLSrGV3FBAAAAAAAAAAACwAhaGUSrLtSWyt5j2rMNFb8crX27Y5/XK+fWvPyOO11uXvSv90sl/GiWyvkxxdnmL3rP9clPGiC/kxx1Wbbtef1qrnEMd9+tE5O3TjlN+sbWTDnMtV14Z9JYSuzSggAAAAAAAAAAABRMKrML1le0OsWXtC3ssXmDi0aTBN5OE6Sx+RxT8i/I4fkSbJ4ib9SZTEOVrJKyiCAAAAAAAAAAAAFEgdVXi0SsIXiQOsVohSZBXoHQSJQCEAAAAAAAAAAAAABQBIcTEhw6CEEAKCAAAAAAAAAAAAAAAAAAoAIAAACggAAAAAAP/2Q==" data-atf="5" data-frt="0">
+                            <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-title">Sub Title</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">1st list item</li>
+                            <li class="list-group-item">2nd list item</li>
+                            </ul>
+                            <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                            </div>
+                            <div class="card-footer">Card Footer</div>
+                    </div>  
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                                <div class="card-header"> card Header </div>
+                                <img class="card-img-top" style="width:260px" alt="Image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHAAwAMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAAAAQIDBAUGB//EACUQAQACAgICAwABBQAAAAAAAAABAgMEBREGQRIhMRMiMlFhof/EABoBAQADAQEBAAAAAAAAAAAAAAABAgQDBQb/xAAjEQEAAwEAAwACAQUAAAAAAAAAAQIDEQQSIRMxQQUUIjJR/9oADAMBAAIRAxEAPwD4mhYAAAABRIIBKCAAAAAAAAAAAAAAAAAAAFARK0QvSOreqdJ6iayHUcEoBAAJAQQAAAAAAAAAAAAAoKiVqsoUaKwy+J119GNqnXO2bHpbrl6B1Hoh09F6Qn1EwpNUWVBCAAAAAAAAAAAAAsEjKs/aktGct1fxWWqJWY7R1POpXDNp+oJtwjKZba6lp9KfkdI8eUtq2j0n8kE+Pxqtimq0WcrZca7VXhwtRgtEuFoEuaAAAAAAAAAAAAAsCSFZXr8bIlVorMuRr45yWiOnO9uNeVZs7zT475ViemHTbj1M8I45c6VaR9w4xtMu/wCOIab61ZdI0lSc4lwdnV6j6h3poz6YuqzYprM/TVW3Xm658aLR06dZL0YLQzzAlVAAAAAAAAAAAUBErRHWUV7V671o2Y8czMQrMtFM5mXf8NoWyXjqHn+RtEQ9bx8fV7LBxs4tf5TX08a2/tbj0Kxx5vl9v+LJNI/XpePn7R1k329Z5Dhau3bJkis+3e+fIc895meO1vpzkxd/FkjXk8a5jsOj3tSazPcN2WnWPbL46nLT4y11l5mlOOPLrDFeElZxQQAAAAAAAAAAoCJXr+22iktVHP0scWtDhpPIb8K9l9B8S0KZb07h8/5us949b/WvX0Df4eteO+VY9PP9ZiIsy5eV7aesvjHkmpkxb1+6z12+i8PSJzhx8qsxdjwHGZtrar1Weu/8J8retKJ8bObW6+k4+C/j0u7U9Pn7bWm3Xo/kr31eI8h1YxXtEQ9fxNJtDnpDx211F3sUePv8lw5l3h515SVnFBAAAAAAAAAAACiWVZ6lSYd87Ox0csVtHbhpHYenhb6974vyVcF6/bwPMxmfr2KzF68fT9PlcW5pxitMfjzfaYr6y82/jznf2h0m94rj5DN8orE9/wCl8tdK/KtE705/m7jhfD8WjWL2pERHvpp/t9dI99P0y6+fWI9c18g2cGtgmlJj6hk05NuQt4tbWnsvkHkmzGTLfp7Ph5zEQ3aWeL2p7vL2qfp4vkT9cV1h59xZzQQAAAAAAAAAAAsCREr1lvxXmsudobMr8dro79sUx1LJrjFnp478eu4bn7Y5r3f/AK8jyPD/AJhtretoe94byilaxNrQ870vnb44a+LF/wBOZyfmVf4ZiL+nS2m23yZcM/6fFZ7L57z3kltibRF2vx/D/mWvtaRyHjN7bnLae5exln6wza6/8dVl+5a6vP0+tFo6leGLSrGV3FBAAAAAAAAAAACwAhaGUSrLtSWyt5j2rMNFb8crX27Y5/XK+fWvPyOO11uXvSv90sl/GiWyvkxxdnmL3rP9clPGiC/kxx1Wbbtef1qrnEMd9+tE5O3TjlN+sbWTDnMtV14Z9JYSuzSggAAAAAAAAAAABRMKrML1le0OsWXtC3ssXmDi0aTBN5OE6Sx+RxT8i/I4fkSbJ4ib9SZTEOVrJKyiCAAAAAAAAAAAAFEgdVXi0SsIXiQOsVohSZBXoHQSJQCEAAAAAAAAAAAAABQBIcTEhw6CEEAKCAAAAAAAAAAAAAAAAAAoAIAAACggAAAAAAP/2Q==" data-atf="5" data-frt="0">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-title">Sub Title</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1st list item</li>
+                                <li class="list-group-item">2nd list item</li>
+                                </ul>
+                                <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                                </div>
+                                <div class="card-footer">Card Footer</div>
+                        </div>  
+                        </div>
+        </div>
+      </div>  
+     
+          <!-- table -->
+          <div class="container py-3 ">
+          <table class="table table-responsive ms-auto">
+            <thead>
+              <tr >
+                <td><input type="checkbox"></td>
+                <th scope="col">Title</th>
+                <th scope="col">Title</th>
+                <th scope="col">Title</th>
+                <th scope="col">Title</th>
+                <th scope="col">Title</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td> <span class="text-primary">publish</span>
+                    <span class="text-primary ">Edit</span>
+                    <span class="text-primary">Delete</span></td>
+              </tr>
+              <tr class="border-bottom border-secondary">
+                <td><input type="checkbox"></td>
+                <td scope="row">||</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>Text line</td>
+                <td>
+                <span class="text-primary">publish</span>
+                <span class="text-primary ">Edit</span>
+                <span class="text-primary">Delete</span>
+                </td>
+              </tr>
+               
+            </tbody>
+          </table>
+          </div>
+          <!-- form -->
+          <div class="container mb-4 py-2">
+          <h5 class="mb-4 ">Bootstrap Form</h5>
+          <form class="form-control p-0">
+            <div class="input-group">
+                <input  type="text" class="form-control border border-secondary" id="exampleInputPassword1" placeholder="First Name" >
+                <span class="input-group-btn" style="width:15px;"></span>
+                <input type="text" class="form-control border border-secondary" id="exampleInputPassword1" placeholder="Last Name">
+            </div>  
+            <div >
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" class="form-control border border-secondary" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+            <div >
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input type="password" class="form-control border border-secondary" id="exampleInputPassword1" placeholder="password">
+            </div>
+            <div>
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="password" class="form-control border border-secondary" id="exampleInputPassword1" placeholder="Confirm password">
+            </div>
+            <div>
+            <button type="submit" class="btn btn-primary my-4">Submit Form</button>
+            </div>
+          </form>
+          </div>
+
+</body>
+</html>
+
+
+
+
+ <!-- <div class="btn-group" role="group" ></div>
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+    <label class="btn btn-outline-dark " for="btncheck1"></label>
+</div>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAACnCAMAAACYVkHVAAAAZlBMVEVVVVUzMzNYWFcwMDBVVldTVFY/PThOS0YvLy9YVVIxNzs3PD5DQ0M3NzcxMTBNUVM7QEVSTUg5NjFFSk8yMzU2NDI/Pj4tMTVIRD5FR0hJSEZRUE1CREU8ODc3MjE5O0E3PEI5Mi1ulX8CAAADDklEQVR4nO3Y3XKqMBSGYfKjBg2hrUJbodp9/ze5VxJQUPfsnnQ6Zd7noCosqXyTLAJFAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAV2l9fW/19NO05uHmYbud7f1H6UIcvX8f39vO+351X7ORmgchpPKiKL339az2W37oT/morp702rinSxTPzhzu47JvzmwfxbVx4XVVlI1x+0lt2Nlv+uU/4mTUyJz1Wpn/x2XU47iMuo/LqGXFlUaXZDWMrmlcg9SMrud8G5eVXaln5bgmdKHfzDi6lhNaPFGV+k2O69i2seHEZuRXqZ/VpW97ySTuuYmr823b+vf6Mrpy77Jj7RDXUcr6+vH//2VmcYXd2hkTzjZOxhAn44txfWNiv5I9wR1mcW2CMU583k7GtRzE7eLx5EidfF+OelhE25/FpYKpGulj+xiXSnHFtqaarX5zylRtI8WXuPQfZXbet80kLhX2cRbGWvmexGW7Jla1IR3115vHddjreMrSwq5xxdOstWw9a12GSVylU69pedbN45K/5slqyUni0qnh69jItgtoYfPJKNMwvkzjCqn9dy4GUdi1mY0uVUnrWulZXPrZKFcPk9tqCXwnHbA16rCA9nXb6u/iynNIPob65sooX836eVybkK6S+cpYSlwhNjjpZkuMq3gUl5WP5jauePls4zrE1fO48kDKoytOZ2lwyYO7hN/ma3EV+hR3amlh04WEbLCyJ0d07V2neITUBGUyrk1selKnFzC4vhpXEa92O/8xuzKeWllybW5HlxxIattYG0eXdDLT193RN58LuOOWuz1jhrjyPaMMh0893gS9jHc15YuctjvIzkmrd7FzqbBNR7msu6y85FoT113HkDucW0JcxUYW5nmaDE8k0ovtZLkucflxpy18VbWrjff9Ja5jK7dQVdXb6xOJXF5Kbb8an0h0scFVu4Ws669PpYZ3+cnVXV2+PZw9E5sd5X7sTDYtoMsDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd/4CZhkpo+f80+kAAAAASUVORK5CYII=" alt="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPy9xLIK6H8mAoqVhQUgn0Iq8HSNXD1GvNqQ&amp;usqp=CAU"" alt=""> --> 
